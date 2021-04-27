@@ -1,0 +1,123 @@
+@import './bootstrap.min.css';
+@import "./swiper.min.css";
+@import './animate.css';
+
+body{
+  overflow-x: hidden;
+}
+
+.main-banner{
+  background-position: bottom right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.banner-content{
+  padding-top: 200px;
+  padding-bottom: 250px;
+}
+.banner-choice{
+  background-color: #E2EAED;
+  padding-left: 35px;
+  padding-right: 30px;
+}
+
+
+.image-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  min-height: 80px;
+  height: 80px;
+  width: 80px;
+}
+.image-wrapper img{
+  display: block;
+  max-width: 60%;
+}
+
+.app-title{
+  max-width: 620px;
+}
+.app-title.app-title-lg{
+  max-width: 720px;
+}
+.image-group > div:nth-child(6n + 1) .image-wrapper{
+  background-color: #FFECEF;
+}
+.image-group > div:nth-child(6n + 2) .image-wrapper{
+  background-color: #EAF9FF;
+}
+.image-group > div:nth-child(6n + 3) .image-wrapper{
+  background-color: #E4FFEE;
+}
+.image-group > div:nth-child(6n + 4) .image-wrapper{
+  background-color: #FFF6D3;
+}
+.image-group > div:nth-child(6n + 5) .image-wrapper{
+  background-color: #F4F4FF;
+}
+.image-group > div:nth-child(6n) .image-wrapper{
+  background-color: #FDEEE4;
+}
+
+
+.feedback-image{
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.feedback-nav{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.feedback-control{
+  width: 45px;
+  height: 45px;
+  color: #0D6EFD;
+  background-color: #EFF3F8;
+  border: 2px solid #EFF3F8;
+}
+.feedback-control span{
+  position: relative;
+  top: -4px;
+}
+.feedback-control.swiper-button-disabled{
+  color: #EFF3F8;
+  background-color: #fff;
+}
+
+.download-section{
+  background-size: contain;
+  background-position: right 40px;
+  background-repeat: no-repeat;
+}
+footer{
+  background-color: #09142E;
+}
+.footer-social a{
+  opacity: 0.4;
+}
+.footer-social a:hover{
+  opacity: 1;
+}
+
+
+@media (max-width: 991px){
+  .main-banner{
+    background: none !important;
+  }
+  .banner-content{
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+  .download-section{
+    background: none !important;
+  }
+}
